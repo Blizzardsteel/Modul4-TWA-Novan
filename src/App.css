@@ -136,9 +136,11 @@
 
 .card-img {
   width: 100%;
-  height: auto;
+  height: 160px;
+  object-fit: cover;
   margin-bottom: 10px;
   border-bottom: 1px solid var(--line);
+  background: #e9edf0;
 }
 
 .card .name,
@@ -177,9 +179,11 @@
 
 .popup-img {
   width: 100%;
-  height: auto;
+  height: 220px;
+  object-fit: cover;
   margin-bottom: 16px;
   border-bottom: 1px solid var(--line);
+  background: #e9edf0;
 }
 
 .popup h3,
@@ -220,4 +224,147 @@
 
 .footer p {
   margin: 0;
+}
+
+/* ── Toolbar: search + filter ── */
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 0 0;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: var(--steel);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 36px 10px 38px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: var(--steel);
+}
+
+.search-input:focus {
+  border-color: var(--brass);
+}
+
+.search-clear {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: var(--steel);
+  cursor: pointer;
+  padding: 2px 6px;
+  line-height: 1;
+}
+
+.search-clear:hover {
+  color: var(--ink);
+}
+
+.filter-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 6px 16px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--steel);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--brass);
+  color: var(--ink);
+}
+
+.filter-active {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.filter-active:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+/* ── Empty state ── */
+.empty-state {
+  text-align: center;
+  padding: 64px 24px;
+}
+
+.empty-icon {
+  color: var(--line);
+  margin-bottom: 16px;
+}
+
+.empty-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+
+.empty-sub {
+  color: var(--steel);
+  margin: 0;
+}
+
+/* ── Install button ── */
+.install-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--brass);
+  color: #fff;
+  border: none;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.install-btn:hover {
+  background: #8a6624;
+}
+
+.install-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--steel);
 }

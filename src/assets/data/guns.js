@@ -53,6 +53,33 @@ const GUNS = [
     description:
       'The other pump gun. Twin action bars, a simple safety on the tang, and a price that leaves money for ammunition.',
   },
+  {
+    name: 'Beretta M9',
+    type: 'Pistol',
+    caliber: '9mm',
+    price: 679,
+    image: '/guns/baretta.svg',
+    description:
+      'The sidearm that served the U.S. military for over three decades. Open-slide design, alloy frame, and a 15-round double-stack magazine. Accurate, reliable, and built like a service weapon should be.',
+  },
+  {
+    name: 'FN SCAR 17S',
+    type: 'Rifle',
+    caliber: '7.62mm NATO',
+    price: 3499,
+    image: '/guns/fnscar.svg',
+    description:
+      'Born from a U.S. Special Operations requirement. Short-stroke gas piston, folding stock, and a monolithic upper receiver with full-length rail. The modern battle rifle, refined.',
+  },
+  {
+    name: 'Benelli M4',
+    type: 'Shotgun',
+    caliber: '12 Gauge',
+    price: 1999,
+    image: '/guns/beneli.svg',
+    description:
+      'Auto-regulating gas-operated semi-automatic. The Marine Corps picked it as the M1014 for a reason — it cycles everything from light birdshot to heavy slugs without adjustment.',
+  },
 ]
 
 export default GUNS
